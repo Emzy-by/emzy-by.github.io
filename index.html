@@ -1,103 +1,83 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles/style.css">
-        <script src="./script/script.js"></script>
-        <title>
-            Flowers
-        </title>
-    </head>
-    <body style="background-color: #D8BFD8;">
-        <table style="background-color: #ebdef0; border-style: solid; border-width:10px; border-color: #ebdef0;">
-            <tr>
-                <td>
-                    <a href="Home">Home</a>
-                </td>
-                <td>
-                    <a href="About">About</a>
-                </td>
-                <td>
-                    <a href="mailto:emily.king@edu.sati.ca">Contact us</a>
-                </td>
-            </tr>
-        </table>
-        <h1>
-            Spring Flowers
-        </h1>
-            <div>
-                <table style="background-color: #ebdef0; border-style: solid; border-width:10px; border-color: #ebdef0;">
-                    <tr>
-                        <td>
-                            <ol>
-                                <li>Hyacinths</li>
-                                <br>
-                                <li>Lily of the Valley</li>
-                                <br>
-                                <li>Viola</li>
-                            </ol>
-                        </td>
-                        <td>
-                            <br>
-                        </td>
-                        <td>
-                            <img src="Flowers.jpg" width="200"> 
-                        </td>
-                    </tr>
-                </table> 
-                <br>
-                <p style="background-color: #ebdef0; border-style: solid; border-width:10px; border-color: #ebdef0;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a vehicula diam. Proin magna mi, vulputate a malesuada varius, dignissim vitae neque. Quisque et dignissim est, in malesuada magna. Nullam mattis tempor diam sed fringilla. Donec odio est, feugiat eget mattis quis, sodales in ipsum. Duis ante sem, laoreet id dui eu, fermentum feugiat nibh. Donec eget gravida ante. Aenean dignissim orci sit amet tempus maximus.  
-                </p>
-            </div>
-        <h2>
-            My Favoirte Flowers
-        </h2>
-        <div>
-            <table style="background-color: #ebdef0; border-style: solid; border-width:10px; border-color: #ebdef0;">
-                <tr>
-                    <td>Tulips</td>
-                    <td>
-                        <img src="Tulips.jpg" width="200">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Daffodils</td>
-                    <td>
-                        <img src="Daffodils.jpg" width="200">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Peony</td>
-                    <td>
-                        <img src="Peony.jpg" width="200">
-                    </td>
-                </tr>
-            </table>
+<head>
+    <title>My Flower Website</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar {
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        
+        .navbar a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: darkgreen;
+        }
+        
+        .main-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .flower-pics {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .flower-pics img {
+            width: 200px;
+            height: 150px;
+            border: 2px solid green;
+        }
+        
+        .content {
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Flowers</a>
+        <a href="#">Contact</a>
+    </div>
+    
+    <img class="main-image" src="Flowers.jpg" alt="Beautiful flowers">
+    
+    <div class="content">
+        <h1>Welcome to My Flower Page</h1>
+        
+        <p>
+            I love flowers! They are pretty and smell nice. 
+            On this page I will show you my favorite flowers 
+            and where you can buy them.
+        </p>
+        
+        <h2>My Favorite Flowers</h2>
+        
+        <div class="flower-pics">
+            <img src="Tulips.jpg" alt="Tulips">
+            <img src="Daffodils.jpg" alt="Daffodils">
+            <img src="Peony.jpg" alt="Peony">
         </div>
-        <h3>
-            Places to Buy Flowers
-        </h3>
-        <div>
-            <ul>
-                <li>Local Flower Shop</li>
-                    <ul>
-                        <li>
-                            words
-                        </li>
-                    </ul>
-                <li>Safeway</li>
-                <ul>
-                    <li>
-                        words
-                    </li>
-                </ul>
-                <li>Garden</li>
-                <ul>
-                    <li>
-                        words
-                    </li>
-                </ul>
-            </ul>
-        </div>
-    </body>
+        
+        <h2>Where to Buy Flowers</h2>
+        
+        <ul>
+            <li>Local flower shop</li>
+            <li>Safeway grocery store</li>
+            <li>Garden center</li>
+        </ul>
+    </div>
+</body>
 </html>
